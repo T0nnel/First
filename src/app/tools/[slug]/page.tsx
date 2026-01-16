@@ -12,6 +12,14 @@ const CaseConverter = dynamic(() => import('@/components/tools/CaseConverter'));
 const Base64Tool = dynamic(() => import('@/components/tools/Base64Tool'));
 const ColorPicker = dynamic(() => import('@/components/tools/ColorPicker'));
 const LoremGenerator = dynamic(() => import('@/components/tools/LoremGenerator'));
+const ImageResizer = dynamic(() => import('@/components/tools/ImageResizer'));
+const ImageConverter = dynamic(() => import('@/components/tools/ImageConverter'));
+const ImageCropper = dynamic(() => import('@/components/tools/ImageCropper'));
+const ImageToBase64 = dynamic(() => import('@/components/tools/ImageToBase64'));
+const TextDiff = dynamic(() => import('@/components/tools/TextDiff'));
+const TextToAscii = dynamic(() => import('@/components/tools/TextToAscii'));
+const UrlEncoder = dynamic(() => import('@/components/tools/UrlEncoder'));
+const HashGenerator = dynamic(() => import('@/components/tools/HashGenerator'));
 
 // Generate static params for all tools
 export async function generateStaticParams() {
@@ -61,6 +69,14 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
         'base64': Base64Tool,
         'color-picker': ColorPicker,
         'lorem-generator': LoremGenerator,
+        'image-resizer': ImageResizer,
+        'image-converter': ImageConverter,
+        'image-cropper': ImageCropper,
+        'image-to-base64': ImageToBase64,
+        'text-diff': TextDiff,
+        'text-to-ascii': TextToAscii,
+        'url-encoder': UrlEncoder,
+        'hash-generator': HashGenerator,
     };
 
     const ToolComponent = toolComponents[params.slug];
@@ -84,12 +100,13 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
             </div>
 
             {/* Ad Space - Top */}
-            <div className="mb-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+            <div className="mb-8 glass rounded-xl p-6 text-center">
                 <p className="text-gray-500 text-sm">Advertisement</p>
+                {/* Replace with actual AdSense code after approval */}
             </div>
 
             {/* Tool Component */}
-            <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div className="glass rounded-2xl shadow-2xl p-8 mb-8">
                 {ToolComponent ? <ToolComponent /> : <p>Tool component not found</p>}
             </div>
 
@@ -110,12 +127,12 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <RelatedToolCard href="/tools/image-resizer" title="Image Resizer" />
                     <RelatedToolCard href="/tools/image-converter" title="Image Converter" />
-                    <RelatedToolCard href="/tools/image-cropper" title="Image Cropper" />
+                    <RelatedToolCard href="/tools/word-counter" title="Word Counter" />
                 </div>
             </div>
 
             {/* Ad Space - Bottom */}
-            <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+            <div className="glass rounded-xl p-6 text-center">
                 <p className="text-gray-500 text-sm">Advertisement</p>
             </div>
         </div>
@@ -124,7 +141,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
 
 function RelatedToolCard({ href, title }: { href: string; title: string }) {
     return (
-        <a href={href} className="block p-4 bg-white border rounded-lg hover:border-primary hover:shadow-md transition">
+        <a href={href} className="block p-4 glass rounded-lg hover:shadow-xl card-hover">
             <h3 className="font-semibold">{title}</h3>
         </a>
     );

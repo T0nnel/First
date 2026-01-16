@@ -1,5 +1,6 @@
 // Tool metadata for SEO and routing
 export const toolsData = {
+    // Already implemented
     'image-compressor': {
         title: 'Free Image Compressor Online - Reduce File Size',
         description: 'Compress images without losing quality. Reduce JPG, PNG, WEBP file sizes by up to 90%. Fast, free, and works offline in your browser.',
@@ -55,6 +56,64 @@ export const toolsData = {
         keywords: 'lorem ipsum generator, placeholder text, dummy text, lorem ipsum',
         icon: '📜',
         category: 'text',
+    },
+
+    // New tools to implement
+    'image-resizer': {
+        title: 'Image Resizer - Resize Images Online Free',
+        description: 'Resize images to any dimension instantly. Free online image resizer tool.',
+        keywords: 'image resizer, resize image, image dimensions, scale image',
+        icon: '📐',
+        category: 'image',
+    },
+    'image-converter': {
+        title: 'Image Converter - Convert JPG, PNG, WEBP Online',
+        description: 'Convert images between JPG, PNG, and WEBP formats instantly.',
+        keywords: 'image converter, jpg to png, png to jpg, webp converter',
+        icon: '🔄',
+        category: 'image',
+    },
+    'image-cropper': {
+        title: 'Image Cropper - Crop Images Online Free',
+        description: 'Crop images perfectly with our free online image cropper.',
+        keywords: 'image cropper, crop image, trim image',
+        icon: '✂️',
+        category: 'image',
+    },
+    'image-to-base64': {
+        title: 'Image to Base64 Converter Online',
+        description: 'Convert images to Base64 encoded strings instantly.',
+        keywords: 'image to base64, base64 image encoder',
+        icon: '🖼️',
+        category: 'image',
+    },
+    'text-diff': {
+        title: 'Text Diff Checker - Compare Two Texts Online',
+        description: 'Compare two texts and find differences instantly.',
+        keywords: 'text diff, compare text, text comparison, diff checker',
+        icon: '⚖️',
+        category: 'text',
+    },
+    'text-to-ascii': {
+        title: 'Text to ASCII Art Generator Online',
+        description: 'Convert text to ASCII art instantly.',
+        keywords: 'ascii art generator, text to ascii, ascii converter',
+        icon: '🔠',
+        category: 'text',
+    },
+    'url-encoder': {
+        title: 'URL Encoder/Decoder Online Tool',
+        description: 'Encode and decode URLs instantly.',
+        keywords: 'url encoder, url decoder, encode url, decode url',
+        icon: '🔗',
+        category: 'developer',
+    },
+    'hash-generator': {
+        title: 'Hash Generator - MD5, SHA1, SHA256 Online',
+        description: 'Generate MD5, SHA1, and SHA256 hashes instantly.',
+        keywords: 'hash generator, md5 generator, sha256, hash calculator',
+        icon: '🔑',
+        category: 'developer',
     },
 };
 
