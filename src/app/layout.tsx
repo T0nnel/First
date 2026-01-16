@@ -37,7 +37,8 @@ export default function RootLayout({
                 {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> */}
 
                 {/* AdSense - Add your publisher ID */}
-                {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossOrigin="anonymous"></script> */}
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8193538495795562"
+                    crossOrigin="anonymous"></script>
             </head>
             <body className={inter.className}>
                 <Header />
