@@ -2,7 +2,7 @@ export default function ToolsPage() {
     return (
         <div className="container mx-auto px-4 py-12">
             <h1 className="text-5xl font-black mb-4 gradient-text">All Tools</h1>
-            <p className="text-xl text-gray-600 mb-12">Browse our complete collection of free online tools</p>
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">Browse our complete collection of free online tools</p>
 
             {/* Image Tools */}
             <section className="mb-12">

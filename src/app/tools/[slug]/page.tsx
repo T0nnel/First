@@ -84,10 +84,10 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
     return (
         <div className="container mx-auto px-4 py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm text-gray-600 mb-6">
+            <nav className="text-sm text-gray-600 dark:text-gray-400 mb-6">
                 <a href="/" className="hover:text-primary">Home</a> /
                 <a href="/tools" className="hover:text-primary ml-1">Tools</a> /
-                <span className="ml-1 text-gray-900">{tool.title.split('-')[0]}</span>
+                <span className="ml-1 text-gray-900 dark:text-gray-100">{tool.title.split('-')[0]}</span>
             </nav>
 
             {/* Tool Header */}
@@ -96,7 +96,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
                     <span className="text-5xl">{tool.icon}</span>
                     {tool.title.split('-')[0]}
                 </h1>
-                <p className="text-xl text-gray-600">{tool.description}</p>
+                <p className="text-xl text-gray-600 dark:text-gray-400">{tool.description}</p>
             </div>
 
             {/* Ad Space - Top */}

@@ -42,7 +42,7 @@ export default function LoremGenerator() {
                     max="100"
                     value={paragraphs}
                     onChange={(e) => setParagraphs(Number(e.target.value))}
-                    className="w-32 px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none"
+                    className="w-32 px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none dark:border-gray-700"
                 />
             </div>
 
@@ -58,7 +58,7 @@ export default function LoremGenerator() {
             </div>
 
             {output && (
-                <pre className="mt-4 p-4 bg-gray-50 border border-gray-300 rounded-lg whitespace-pre-wrap">
+                <pre className="mt-4 p-4 bg-gray-50 border border-gray-300 rounded-lg whitespace-pre-wrap dark:bg-gray-900 dark:border-gray-700">
                     {output}
                 </pre>
             )}

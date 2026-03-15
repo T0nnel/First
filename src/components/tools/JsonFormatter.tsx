@@ -43,7 +43,7 @@ export default function JsonFormatter() {
     return (
         <div>
             <textarea
-                className="w-full h-64 p-4 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-y font-mono text-sm"
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full h-64 p-4 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-y font-mono text-sm dark:border-gray-700"
                 placeholder='Enter JSON here... e.g. {"name":"John","age":30}'
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
@@ -68,7 +68,7 @@ export default function JsonFormatter() {
             )}
 
             {output && (
-                <pre className="mt-4 p-4 bg-gray-50 border border-gray-300 rounded-lg overflow-x-auto font-mono text-sm">
+                <pre className="mt-4 p-4 bg-gray-50 border border-gray-300 rounded-lg overflow-x-auto font-mono text-sm dark:bg-gray-900 dark:border-gray-700">
                     {output}
                 </pre>
             )}

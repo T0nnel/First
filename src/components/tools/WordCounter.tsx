@@ -14,7 +14,7 @@ export default function WordCounter() {
     return (
         <div>
             <textarea
-                className="w-full h-64 p-4 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-y"
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full h-64 p-4 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-y dark:border-gray-700"
                 placeholder="Type or paste your text here..."
                 value={text}
                 onChange={(e) => setText(e.target.value)}
@@ -27,7 +27,7 @@ export default function WordCounter() {
                 <StatCard label="Paragraphs" value={paragraphs} />
             </div>
 
-            <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+            <div className="mt-4 p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
                 <strong>Reading Time:</strong> {readingTime} min
             </div>
         </div>
@@ -36,9 +36,9 @@ export default function WordCounter() {
 
 function StatCard({ label, value }: { label: string; value: number }) {
     return (
-        <div className="text-center p-4 bg-gray-50 rounded-lg">
+        <div className="text-center p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
             <div className="text-3xl font-bold text-primary">{value}</div>
-            <div className="text-gray-600 text-sm mt-1">{label}</div>
+            <div className="text-gray-600 text-sm mt-1 dark:text-gray-300">{label}</div>
         </div>
     );
 }

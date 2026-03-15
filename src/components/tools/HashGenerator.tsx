@@ -24,7 +24,7 @@ export default function HashGenerator() {
     return (
         <div>
             <textarea
-                className="w-full h-32 p-4 border-2 border-gray-300 rounded-lg"
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full h-32 p-4 border-2 border-gray-300 rounded-lg dark:border-gray-700"
                 placeholder="Enter text to hash..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
@@ -38,10 +38,10 @@ export default function HashGenerator() {
 
             {md5 && (
                 <div className="space-y-4 mt-6">
-                    <div className="p-4 bg-gray-50 rounded-lg">
+                    <div className="p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
                         <strong>MD5:</strong> <code className="ml-2 text-primary text-sm break-all">{md5}</code>
                     </div>
-                    <div className="p-4 bg-gray-50 rounded-lg">
+                    <div className="p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
                         <strong>SHA-256:</strong> <code className="ml-2 text-primary text-sm break-all">{sha1}</code>
                     </div>
                 </div>

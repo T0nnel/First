@@ -2,12 +2,12 @@ import { ArrowRight, TrendingUp, Sparkles, Zap, Rocket, Star } from "lucide-reac
 
 export default function Home() {
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden w-full h-full">
             {/* Animated Background Blobs */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-                <div className="absolute top-0 -left-4 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob"></div>
-                <div className="absolute top-0 -right-4 w-96 h-96 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-2000"></div>
-                <div className="absolute -bottom-8 left-1/2 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-4000"></div>
+                <div className="absolute top-0 -left-4 w-96 h-96 bg-purple-300 dark:bg-purple-900/40 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob"></div>
+                <div className="absolute top-0 -right-4 w-96 h-96 bg-yellow-200 dark:bg-yellow-900/20 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-8 left-1/2 w-96 h-96 bg-pink-300 dark:bg-pink-900/30 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-4000"></div>
             </div>
 
             {/* Hero Section with Glassmorphism */}
@@ -16,7 +16,7 @@ export default function Home() {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full mb-8 shadow-lg animate-slide-down">
                         <Sparkles className="text-yellow-500 animate-pulse" size={20} />
-                        <span className="text-sm font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                        <span className="text-sm font-bold bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
                             20+ Free Tools & Growing Daily
                         </span>
                         <Sparkles className="text-yellow-500 animate-pulse" size={20} />
@@ -26,29 +26,29 @@ export default function Home() {
                     <h1 className="text-6xl md:text-8xl font-black mb-8 animate-fade-in leading-tight">
                         <span className="gradient-text drop-shadow-lg">Free Online Tools</span>
                         <br />
-                        <span className="bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-gray-100 bg-clip-text text-transparent">
                             for Everyone
                         </span>
                     </h1>
 
                     {/* Subheading */}
-                    <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-12 animate-slide-up font-medium">
-                        Professional tools at your fingertips. <span className="text-purple-600 font-bold">No login</span>. <span className="text-pink-600 font-bold">No limits</span>. <span className="text-indigo-600 font-bold">100% free forever</span>.
+                    <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-12 animate-slide-up font-medium">
+                        Professional tools at your fingertips. <span className="text-purple-600 dark:text-purple-400 font-bold">No login</span>. <span className="text-pink-600 dark:text-pink-400 font-bold">No limits</span>. <span className="text-indigo-600 dark:text-indigo-400 font-bold">100% free forever</span>.
                     </p>
 
                     {/* Stats */}
                     <div className="flex justify-center gap-8 mb-12 flex-wrap">
                         <div className="glass px-8 py-6 rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300 animate-scale-in">
                             <div className="text-5xl font-black gradient-text">20+</div>
-                            <div className="text-sm font-semibold text-gray-600 mt-2">Powerful Tools</div>
+                            <div className="text-sm font-semibold text-gray-600 dark:text-gray-400 mt-2">Powerful Tools</div>
                         </div>
                         <div className="glass px-8 py-6 rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.1s' }}>
-                            <div className="text-5xl font-black text-green-600">100%</div>
-                            <div className="text-sm font-semibold text-gray-600 mt-2">Free Forever</div>
+                            <div className="text-5xl font-black text-green-600 dark:text-green-400">100%</div>
+                            <div className="text-sm font-semibold text-gray-600 dark:text-gray-400 mt-2">Free Forever</div>
                         </div>
                         <div className="glass px-8 py-6 rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-                            <div className="text-5xl font-black text-blue-600">0</div>
-                            <div className="text-sm font-semibold text-gray-600 mt-2">Registration</div>
+                            <div className="text-5xl font-black text-blue-600 dark:text-blue-400">0</div>
+                            <div className="text-sm font-semibold text-gray-600 dark:text-gray-400 mt-2">Registration</div>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
                         </a>
                         <a
                             href="#popular"
-                            className="inline-flex items-center gap-2 glass px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                            className="inline-flex items-center gap-2 glass px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-gray-800 dark:text-gray-200"
                         >
                             <Star size={24} className="text-yellow-500" />
                             Popular Tools
@@ -76,7 +76,7 @@ export default function Home() {
             {/* Popular Tools */}
             <section id="popular" className="relative z-10 container mx-auto px-4 py-16">
                 <div className="flex items-center justify-center gap-3 mb-12">
-                    <TrendingUp className="text-purple-600 animate-float" size={40} />
+                    <TrendingUp className="text-purple-600 dark:text-purple-400 animate-float" size={40} />
                     <h2 className="text-5xl font-black gradient-text">Most Popular</h2>
                 </div>
 
@@ -100,7 +100,7 @@ export default function Home() {
                     <ToolCard
                         icon="{ }"
                         title="JSON Formatter"
-                        description="Format and validateJSON data instantly"
+                        description="Format and validate JSON data instantly"
                         href="/tools/json-formatter"
                         badge="⭐ POPULAR"
                         delay="0.2s"
@@ -122,7 +122,7 @@ export default function Home() {
                     <div className="container mx-auto">
                         <h2 className="text-4xl font-black mb-8 flex items-center gap-3">
                             <span className="text-5xl animate-float">📷</span>
-                            Image Tools
+                            <span className="text-gray-900 dark:text-gray-100">Image Tools</span>
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <ToolCard icon="📐" title="Image Resizer" description="Resize to any dimension" href="/tools/image-resizer" />
@@ -138,7 +138,7 @@ export default function Home() {
             <section className="relative z-10 container mx-auto px-4 py-16">
                 <h2 className="text-4xl font-black mb-8 flex items-center gap-3">
                     <span className="text-5xl animate-float">📝</span>
-                    Text Tools
+                    <span className="text-gray-900 dark:text-gray-100">Text Tools</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <ToolCard icon="🔤" title="Case Converter" description="UPPER, lower, Title Case" href="/tools/case-converter" />
@@ -154,7 +154,7 @@ export default function Home() {
                     <div className="container mx-auto">
                         <h2 className="text-4xl font-black mb-8 flex items-center gap-3">
                             <span className="text-5xl animate-float">💻</span>
-                            Developer Tools
+                            <span className="text-gray-900 dark:text-gray-100">Developer Tools</span>
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <ToolCard icon="🔐" title="Base64 Encoder" description="Encode & decode Base64" href="/tools/base64" />
@@ -171,7 +171,7 @@ export default function Home() {
                 <div className="glass rounded-3xl p-12 text-center shadow-2xl">
                     <Zap className="mx-auto mb-6 text-yellow-500 animate-pulse" size={64} />
                     <h2 className="text-4xl font-black mb-4 gradient-text">Start Using Tools Now</h2>
-                    <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
                         Join thousands of users who trust our tools every day. No signup required!
                     </p>
                     <a
@@ -226,15 +226,15 @@ function ToolCard({
             </div>
 
             {/* Content */}
-            <h3 className="text-xl font-bold mb-2 group-hover:gradient-text transition-all duration-300">
+            <h3 className="text-xl font-bold mb-2 group-hover:gradient-text transition-all duration-300 text-gray-900 dark:text-gray-100">
                 {title}
             </h3>
-            <p className="text-gray-600 text-sm group-hover:text-gray-800 transition-colors">
+            <p className="text-gray-600 dark:text-gray-400 text-sm group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors">
                 {description}
             </p>
 
             {/* Arrow Icon */}
-            <div className="mt-4 flex items-center text-purple-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
+            <div className="mt-4 flex items-center text-purple-600 dark:text-purple-400 font-semibold text-sm opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
                 Try it now <ArrowRight size={16} className="ml-1" />
             </div>
         </a>

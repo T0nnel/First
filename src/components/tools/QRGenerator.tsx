@@ -16,7 +16,7 @@ export default function QRGenerator() {
     return (
         <div>
             <textarea
-                className="w-full h-32 p-4 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-y"
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full h-32 p-4 border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-y dark:border-gray-700"
                 placeholder="Enter text or URL to generate QR code..."
                 value={text}
                 onChange={(e) => setText(e.target.value)}
@@ -31,10 +31,10 @@ export default function QRGenerator() {
 
             {qrUrl && (
                 <div className="mt-8 text-center">
-                    <div className="inline-block p-6 bg-white rounded-lg shadow-lg">
+                    <div className="inline-block p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
                         <img src={qrUrl} alt="QR Code" className="max-w-full" />
                     </div>
-                    <p className="mt-4 text-gray-600">Scan with your phone camera</p>
+                    <p className="mt-4 text-gray-600 dark:text-gray-300">Scan with your phone camera</p>
                 </div>
             )}
         </div>

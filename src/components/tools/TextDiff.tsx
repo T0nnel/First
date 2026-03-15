@@ -12,7 +12,7 @@ export default function TextDiff() {
                 <div>
                     <label className="block font-semibold mb-2">Text 1</label>
                     <textarea
-                        className="w-full h-64 p-4 border-2 border-gray-300 rounded-lg"
+                        className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full h-64 p-4 border-2 border-gray-300 rounded-lg dark:border-gray-700"
                         placeholder="Enter first text..."
                         value={text1}
                         onChange={(e) => setText1(e.target.value)}
@@ -21,7 +21,7 @@ export default function TextDiff() {
                 <div>
                     <label className="block font-semibold mb-2">Text 2</label>
                     <textarea
-                        className="w-full h-64 p-4 border-2 border-gray-300 rounded-lg"
+                        className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full h-64 p-4 border-2 border-gray-300 rounded-lg dark:border-gray-700"
                         placeholder="Enter second text..."
                         value={text2}
                         onChange={(e) => setText2(e.target.value)}
@@ -31,8 +31,8 @@ export default function TextDiff() {
             <button className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition font-semibold">
                 Compare Texts
             </button>
-            <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <p className="text-gray-600">Differences will appear here</p>
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
+                <p className="text-gray-600 dark:text-gray-300">Differences will appear here</p>
             </div>
         </div>
     );

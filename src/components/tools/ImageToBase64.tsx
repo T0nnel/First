@@ -24,13 +24,13 @@ export default function ImageToBase64() {
                     type="file"
                     accept="image/*"
                     onChange={handleFile}
-                    className="w-full p-3 border-2 border-gray-300 rounded-lg"
+                    className="w-full p-3 border-2 border-gray-300 rounded-lg dark:border-gray-700"
                 />
             </div>
             {output && (
                 <>
                     <textarea
-                        className="w-full h-48 p-4 border-2 border-gray-300 rounded-lg font-mono text-sm"
+                        className="w-full h-48 p-4 border-2 border-gray-300 rounded-lg font-mono text-sm dark:border-gray-700"
                         value={output}
                         readOnly
                     />

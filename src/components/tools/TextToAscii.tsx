@@ -20,7 +20,7 @@ export default function TextToAscii() {
                 <label className="block font-semibold mb-2">Enter Text</label>
                 <input
                     type="text"
-                    className="w-full p-4 border-2 border-gray-300 rounded-lg"
+                    className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full p-4 border-2 border-gray-300 rounded-lg dark:border-gray-700"
                     placeholder="Enter text..."
                     value={text}
                     onChange={(e) => setText(e.target.value)}

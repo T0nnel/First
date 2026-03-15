@@ -44,18 +44,18 @@ export default function ColorPicker() {
                     type="color"
                     value={color}
                     onChange={(e) => setColor(e.target.value)}
-                    className="w-48 h-48 rounded-lg cursor-pointer border-4 border-gray-300"
+                    className="w-48 h-48 rounded-lg cursor-pointer border-4 border-gray-300 dark:border-gray-700"
                 />
             </div>
 
             <div className="space-y-4">
-                <div className="p-4 bg-gray-50 rounded-lg">
+                <div className="p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
                     <strong>HEX:</strong> <code className="ml-2 text-primary">{color.toUpperCase()}</code>
                 </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
+                <div className="p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
                     <strong>RGB:</strong> <code className="ml-2 text-primary">{hexToRgb(color)}</code>
                 </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
+                <div className="p-4 bg-gray-50 rounded-lg dark:bg-gray-900">
                     <strong>HSL:</strong> <code className="ml-2 text-primary">{hexToHsl(color)}</code>
                 </div>
             </div>
